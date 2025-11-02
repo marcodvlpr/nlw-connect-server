@@ -7,6 +7,4 @@ const envSchema = z.object({
   WEB_URL: z.string(),
 });
 
-console.log(process.env.REDIS_URL);
-
 export const env = envSchema.parse(process.env);
